@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bievenido a phalcon</title>
+</head>
+<body>
+	
+</body>
+</html>
+
+
+
+<div class="container">
+<div class="page-header">
+    <h1>Bienvenido a Phalcon!</h1>
+</div>
+
+<p>Ahora estás volando con Phalcon. Grandes cosas están a punto de suceder!</p>
+<div class="well">
+	<div class="row">
+	<div class="col-sm-4" style="background-color:#F0F0F0;">
+	
+	<?php echo $this->tag->form(array("index/save", "method" => "post")); ?>
+	<p>
+		<label for="username">Username:</label>
+		<?php 
+			echo $this->tag->textField("username"); 
+		?>
+	</p>
+
+	<p>
+		<label for="password">Password:</label>
+		<?php 
+			echo $this->tag->passwordField("password"); 
+		?>
+	</p>
+
+	<p>
+		<label for="name">Name:</label>
+		<?php 
+			echo $this->tag->textField("name");
+		?>
+	</p>
+
+	<p>
+		<label for="email">Email:</label>
+		<?php 
+			echo $this->tag->textField("email");
+		?>
+	</p>
+
+	<p>
+		<?php echo "<p class='btn btn-info'>". $this->tag->submitButton("Registro")."</p>"; ?>
+	</p>
+	</form>
+
+	<?php 
+	//mostrar los mensajes
+	echo $this->getContent();?>
+		</div>
+		<div class="col-sm-4" style="background-color: #e6fff2;">
+		kdfgjfdgdfgdfgdsfg
+		dfg
+		d
+		fg
+		d
+		g
+		dfg
+		gdfgdf
+		g
+		gdfgdng<hr>
+		<hr>
+		</div>
+		<div class="col-sm-4" style="background-color:#e6ffff;">
+		fsadfs
+		f
+		sdaf
+		sa
+		f
+		sf
+		<br>
+		sdfjdsgkkkkkkkkkkf
+		<br>
+		dfiogjpdfoigjog
+		<br>
+		</div>
+	</div>
+ </div>
+</div>
+</form>
